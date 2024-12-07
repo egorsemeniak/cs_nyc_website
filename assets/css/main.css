@@ -21,7 +21,7 @@ body{
 p {
     margin: 0;
     padding: 0;
-    /*margin-top: var(--line-height);*/
+
 }
 
 hr {
@@ -45,7 +45,7 @@ a:hover{
     /*color:rgb(100,200,200);*/
 }
 
-/* small */
+
 main{
     left: 1ch;
     margin-right: 1ch;
@@ -54,7 +54,7 @@ main{
     top: calc(1 * var(--line-height));
     box-decoration-break: slice;
     padding-bottom: calc(4 * var(--line-height));
-    /*background-color: rgba(200,0,0,0.2);*/
+
 }
 
 /* larger */
@@ -92,14 +92,13 @@ output span{
     display: block;
 }
 
-/* avoid spring & scrolling */
 .disable-scroll{
     bottom:0;
     overflow-y: hidden;
     position: fixed;
 }
 
-/* Long touch hangs when selecting changing text on Safari / iOS (?)*/
+
 .disable-touch-select{
     -webkit-touch-callout:none;
     -webkit-user-select:none;
@@ -111,31 +110,14 @@ output span{
 
 .hidden{
     display: none;
-    /*opacity: 0;*/
+
 }
 
 .invisible {
     color: transparent
-    /*visibility: hidden;*/
+
 }
 
-/* ------------------------------------------------------------------------------- */
-
-/*
- * Legal Disclaimer
- *
- * These Fonts are licensed only for use on these domains and their subdomains:
- * ertdfgcvb.com
- *
- * It is illegal to download or use them on other websites.
- *
- * While the @font-face statements below may be modified by the client, this
- * disclaimer may not be removed.
- *
- * Lineto.com, 2017
- */
-
- /* Complete */
 
  @font-face {
      font-family: "l";
@@ -157,29 +139,7 @@ output span{
      font-style: normal;
  }
 
-/* Subsetted */
 
-/*
-@font-face {
-    font-family: "l";
-    src: url("fonts_subsetted/lineto-simple-light.eot");
-    src: url("fonts_subsetted/lineto-simple-light.eot?#iefix") format("embedded-opentype"),
-         url("fonts_subsetted/lineto-simple-light.woff2") format("woff2"),
-         url("fonts_subsetted/lineto-simple-light.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "r";
-    src: url("fonts_subsetted/lineto-simple-regular.eot");
-    src: url("fonts_subsetted/lineto-simple-regular.eot?#iefix") format("embedded-opentype"),
-         url("fonts_subsetted/lineto-simple-regular.woff2") format("woff2"),
-         url("fonts_subsetted/lineto-simple-regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 
 
 
