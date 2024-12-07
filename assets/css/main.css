@@ -43,6 +43,10 @@ a:hover {
     text-decoration: underline; /* Optional: Adds underline on hover */
 }
 
+a.swapper {
+    display: inline-block; /* Ensures link is block-like but inline-sized */
+    margin-top: var(--line-height); /* Adds space above for visual appeal */
+}
 
 main{
     left: 1ch;
