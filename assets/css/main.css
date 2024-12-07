@@ -137,13 +137,7 @@ output span{
      font-style: normal;
  }
 
-.link {
-    display: inline-block; /* Ensures links are clickable and visible */
-    text-decoration: underline; /* Default underline for visibility */
-    color: blue; /* Standard link color */
-    pointer-events: auto; /* Make sure links can be clicked */
-    z-index: 1; /* Ensures links are on top */
-}
+
 
 
 
