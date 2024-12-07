@@ -18,66 +18,43 @@
 </head>
 <body>
     <main>
-        <!-- Section 1: Title -->
-        <div class="section">
-            <hr>
-            <p><strong>cyber-security.nyc</strong></p>
-            <hr>
-        </div>
-
-        <!-- Section 2: Personal Info -->
-        <div class="section">
-            <p>
-                <strong>Personal Website of Egor Semeniak</strong><br>
-                - Cybersecurity Professional<br>
-                - Cloud Specialist<br>
-                - Mentor
-            </p>
-            <hr>
-        </div>
-
-        <!-- Section 3: Bio -->
-        <div class="section">
-            <p>
-                I am a seasoned cybersecurity professional with extensive experience across AWS, Azure, and Google Cloud platforms. 
-                Over the years, I have honed my skills working with organizations such as the City University of New York (CUNY), 
-                the nonprofit New Visions for Public Schools, IBM, and Codecademy.
-            </p>
-            <p>
-                My expertise spans cloud security, risk management, and empowering teams to build resilient, secure infrastructures.
-                Beyond my professional work, I am passionate about mentorship. I actively support young professionals and college 
-                students entering the cybersecurity field, guiding them through career development and technical growth.
-            </p>
-            <p>
-                As a dedicated member of the cybersecurity community, I am a regular attendee of DEF CON and serve as an admin 
-                for one of its official communities. I believe in fostering collaboration and knowledge-sharing to strengthen 
-                the industry and inspire the next generation of security experts. Let’s connect and secure the future, together.
-            </p>
-            <hr>
-        </div>
-
-        <!-- Section 4: Contact -->
-        <div class="section">
-            <p>
-                <strong>Contact Me:</strong><br>
-                Say <a href="mailto:egor@cyber-security.nyc?subject=ciao" class="swapper">Hello</a>.
-            </p>
-            <hr>
-        </div>
-
-        <!-- Section 5: About Links -->
-        <div class="section">
-            <p>
-                <strong>About Me:</strong><br>
-                <a class="link" target="_blank" href="https://www.linkedin.com/in/egor-semeniak/">LinkedIn</a><br>
-                <a class="link" target="_blank" href="https://www.ny1.com/nyc/all-boroughs/news/2019/05/23/students-invent-algorithm-to-help-prevent-veteran-suicide-">NY1 News</a>
-            </p>
-            <hr>
-        </div>
+        <hr>
+        <p>cyber-security.nyc</p>
+        <hr>
+        <p>
+            Personal Website of Egor Semeniak<br>
+            - Cybersecurity Professional<br>
+            - Cloud Specialist<br>
+            - Mentor
+        </p>
+        <hr>
+        <p>
+            I am a seasoned cybersecurity professional with extensive experience across AWS, Azure, and Google Cloud platforms. 
+            Over the years, I have honed my skills working with organizations such as the City University of New York (CUNY), 
+            the nonprofit New Visions for Public Schools, IBM, and Codecademy. My expertise spans cloud security, risk management, 
+            and empowering teams to build resilient, secure infrastructures.
+        </p>
+        <p>
+            Beyond my professional work, I am passionate about mentorship. I actively support young professionals and college students 
+            entering the cybersecurity field, guiding them through career development and technical growth. As a dedicated member of the 
+            cybersecurity community, I am a regular attendee of DEF CON and serve as an admin for one of its official communities. 
+            I believe in fostering collaboration and knowledge-sharing to strengthen the industry and inspire the next generation 
+            of security experts. Let’s connect and secure the future, together.
+        </p>
+        <hr>
+        <p>
+            Contact Me and maybe say 
+            <a href="mailto:egor@cyber-security.nyc?subject=ciao" class="swapper">Hello</a>.
+        </p>
+        <hr>
+        <p>
+            About Me: <br>
+            <a class="link" target="_blank" href="https://www.linkedin.com/in/egor-semeniak/">LinkedIn</a><br>
+            <a class="link" target="_blank" href="https://www.ny1.com/nyc/all-boroughs/news/2019/05/23/students-invent-algorithm-to-help-prevent-veteran-suicide-">NY1 News</a>
+        </p>
     </main>
 </body>
 
-<!-- JavaScript -->
 <script src="assets/js/js.js"></script>
 <script>
     js.ert.setup(function () {
@@ -87,16 +64,18 @@
     // Knuth shuffle and swap logic
     window.addEventListener('load', function () {
         function shuffle(array) {
-            let idx = array.length;
-            while (idx !== 0) {
-                const r = Math.floor(Math.random() * idx);
-                idx--;
-                [array[idx], array[r]] = [array[r], array[idx]];
+            var idx = array.length;
+            while (0 !== idx) {
+                var r = Math.floor(Math.random() * idx);
+                idx -= 1;
+                var t = array[idx];
+                array[idx] = array[r];
+                array[r] = t;
             }
             return array;
         }
 
-        const messages = shuffle([
+        var s = shuffle([
             'hello from the other side.',
             'something nice, maybe?',
             'what\'s on your mind?',
@@ -105,6 +84,7 @@
             'that the cake is not a lie.',
             'we\'re all in this together.',
             'that you love pineapple on pizza.',
+            'that all your base are belong to us.',
             'that this message will self-destruct.',
             'may the force be with you.',
             'let\'s make something cool.',
@@ -116,12 +96,12 @@
             'that everything is awesome'
         ]);
 
-        let c = 0;
+        var c = 0;
 
         function swap() {
-            c = ++c % messages.length;
-            const e = document.querySelector('.swapper');
-            e.innerText = messages[c];
+            c = ++c % s.length;
+            var e = document.querySelector('main .swapper');
+            e.innerText = s[c];
             js.ert.refresh();
         }
 
