@@ -1,134 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-
 <head>
-		<meta charset="utf-8">
-		<title>cyber-security.nyc</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="Egor Semeniak's Personal Website">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="theme-color" content="black">                            <!-- Chrome, Firefox OS and Opera -->
-		<meta name="msapplication-navbutton-color" content="black">          <!-- Windows Phone -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- iOS Safari -->
-		<link rel="manifest" href="ertdfgcvb.html">
-		<link rel="apple-touch-icon" href="assets/icons/icon.html">
-		<link rel="icon" href="assets/icons/favicon.html" />
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
-		<main class="invisible">
-			<hr>
-			<p>
-				cyber-security.nyc<br>
-				<br>
-			</p>
-			<hr>
-			<p>
-				Personal Website of Egor Semeniak
-				<br>
-				<br>
-				-Cybersecurity Professional
-				<br>
-				-Cloud Specialist
-				<br>
-				-Mentor
-				<br>
-	
-			</p>
-			<br>
-			<hr>
-			<br>
-			<p>
-				I am a seasoned cybersecurity professional with extensive experience across AWS, Azure, and Google Cloud platforms. Over the years, I have honed my skills working with organizations such as the City University of New York (CUNY), the nonprofit New Visions for Public Schools, IBM, and Codecademy. My expertise spans cloud security, risk management, and empowering teams to build resilient, secure infrastructures.Beyond my professional work, I am passionate about mentorship. I actively support young professionals and college students entering the cybersecurity field, guiding them through career development and technical growth.As a dedicated member of the cybersecurity community, I am a regular attendee of DEF CON and serve as an admin for one of its official communities. I believe in fostering collaboration and knowledge-sharing to strengthen the industry and inspire the next generation of security experts.Let’s connect and secure the future, together.				
-			</p>
-			<br>
-			<br>
-			<hr>
-			<p>
-				Contact Me and maybe say<br>
-				<a href="mailto:egor@cyber-security.nyc?subject=ciao" class="swapper">Hello</a>.<br>
-				<br>
-			</p>
-			<hr>
-			<p>
-				About Me:<br>
-				<a class="link" target="_blank" href="https://www.linkedin.com/in/egor-semeniak/">LinkedIn</a><br>
-				<a class="link" target="_blank" href="https://www.ny1.com/nyc/all-boroughs/news/2019/05/23/students-invent-algorithm-to-help-prevent-veteran-suicide-">NY1 News</a><br>
-				
-			</p>
-		</main>
+    <meta charset="utf-8">
+    <title>cyber-security.nyc</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Egor Semeniak's Personal Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="manifest" href="ertdfgcvb.html">
+    <link rel="apple-touch-icon" href="assets/icons/icon.html">
+    <link rel="icon" href="assets/icons/favicon.html" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main>
+        <hr>
+        <p>cyber-security.nyc</p>
+        <hr>
+        <p>
+            Personal Website of Egor Semeniak<br>
+            - Cybersecurity Professional<br>
+            - Cloud Specialist<br>
+            - Mentor
+        </p>
+        <hr>
+        <p>
+            I am a seasoned cybersecurity professional with extensive experience across AWS, Azure, and Google Cloud platforms. 
+            Over the years, I have honed my skills working with organizations such as the City University of New York (CUNY), 
+            the nonprofit New Visions for Public Schools, IBM, and Codecademy. My expertise spans cloud security, risk management, 
+            and empowering teams to build resilient, secure infrastructures.
+        </p>
+        <p>
+            Beyond my professional work, I am passionate about mentorship. I actively support young professionals and college students 
+            entering the cybersecurity field, guiding them through career development and technical growth. As a dedicated member of the 
+            cybersecurity community, I am a regular attendee of DEF CON and serve as an admin for one of its official communities. 
+            I believe in fostering collaboration and knowledge-sharing to strengthen the industry and inspire the next generation 
+            of security experts. Let’s connect and secure the future, together.
+        </p>
+        <hr>
+        <p>
+            Contact Me and maybe say 
+            <a href="mailto:egor@cyber-security.nyc?subject=ciao" class="swapper">Hello</a>.
+        </p>
+        <hr>
+        <p>
+            About Me: <br>
+            <a class="link" target="_blank" href="https://www.linkedin.com/in/egor-semeniak/">LinkedIn</a><br>
+            <a class="link" target="_blank" href="https://www.ny1.com/nyc/all-boroughs/news/2019/05/23/students-invent-algorithm-to-help-prevent-veteran-suicide-">NY1 News</a>
+        </p>
+    </main>
+</body>
 
-	</body>
-	<script src="assets/js/js.js"></script>
-	<script>
+<script src="assets/js/js.js"></script>
+<script>
+    js.ert.setup(function () {
+        js.ert.track(document.querySelector('main'));
+    });
 
-		js.ert.setup( function(){
-		   js.ert.track(document.querySelector('main'));
-		});
+    // Knuth shuffle and swap logic
+    window.addEventListener('load', function () {
+        function shuffle(array) {
+            var idx = array.length;
+            while (0 !== idx) {
+                var r = Math.floor(Math.random() * idx);
+                idx -= 1;
+                var t = array[idx];
+                array[idx] = array[r];
+                array[r] = t;
+            }
+            return array;
+        }
 
-		// old tiroir code
-		window.addEventListener('load', function(){
+        var s = shuffle([
+            'hello from the other side.',
+            'something nice, maybe?',
+            'what\'s on your mind?',
+            'you\'re a wizard, Egor.',
+            'let\'s grab some coffee.',
+            'that the cake is not a lie.',
+            'we\'re all in this together.',
+            'that you love pineapple on pizza.',
+            'that all your base are belong to us.',
+            'that this message will self-destruct.',
+            'may the force be with you.',
+            'let\'s make something cool.',
+            'you need a nap, don\'t you?',
+            'it\'s dangerous to go alone!',
+            '42 is the answer to everything.',
+            'to infinity and beyond!',
+            'that winter is coming',
+            'that everything is awesome'
+        ]);
 
-			// Knuth shuffle:
-			function shuffle(array) {
-				var idx = array.length;
-				while (0 !== idx) {
-					var r = Math.floor(Math.random() * idx);
-					idx -= 1;
-					var t = array[idx];
-					array[idx] = array[r];
-					array[r] = t;
-				}
-				return array;
-			}
+        var c = 0;
 
-			var s = shuffle([
-				    'hello from the other side.',
-				    'something nice, maybe?',
-				    'what\'s on your mind?',
-				    'you\'re a wizard, Egor.',
-				    'let\'s grab some coffee.',
-				    'that the cake is not a lie.',
-				    'we\'re all in this together.',
-				    'that you love pineapple on pizza.',
-				    'that all your base are belong to us.',
-				    'that this message will self-destruct.',
-				    'may the force be with you.',
-				    'let\'s make something cool.',
-				    'you need a nap, don\'t you?',
-				    'it\'s dangerous to go alone!',
-				    '42 is the answer to everything.',
-				    'to infinity and beyond!',
-				    'that the cake is a lie',
-				    'that I need more coffee',
-				    'that it is what it is',
-				    'that I ran out of ideas',
-				    'that winter is coming',
-				    'that this is fine',
-				    'that you got this',
-				    'that you are not alone',
-				    'that resistance is futile',
-				    'that we are all stardust',
-				    'that I need a vacation',
-				    'that there is no spoon',
-				    'that everything is awesome',
-				    'that all your base are belong to us',
-				    'that I know what you did last summer'
-			]);
+        function swap() {
+            c = ++c % s.length;
+            var e = document.querySelector('main .swapper');
+            e.innerText = s[c];
+            js.ert.refresh();
+        }
 
-			var c = 0;
-			function swap(){
-				c = ++c % s.length;
-				var e = document.querySelector('main .swapper');
-				e.innerText = s[c];
-				js.ert.refresh();
-			}
-			swap();
-			setInterval( swap, 9000);
-		});
-	</script>
-
+        swap();
+        setInterval(swap, 9000);
+    });
+</script>
 </html>
