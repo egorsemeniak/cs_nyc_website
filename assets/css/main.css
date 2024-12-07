@@ -34,15 +34,13 @@ hr {
 }
 
 a {
-    font-family: r;
-    text-decoration: none;
-     /*color:rgb(100,200,200);*/
-    color: inherit;
-    transition: all 300ms;
+    color: white; /* Makes all links white */
+    text-decoration: none; /* Optional: Removes the underline */
 }
 
-a:hover{
-    /*color:rgb(100,200,200);*/
+a:hover {
+    color: #ddd; /* Slightly lighter white for hover effect */
+    text-decoration: underline; /* Optional: Adds underline on hover */
 }
 
 
